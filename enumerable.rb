@@ -94,18 +94,3 @@ end
 def multiply_els(arr)
   arr.my_inject {|prod, num| prod * num }
 end
-
-array = [1,2,3]
-hash = {"a" => "A", "b" => "B"}
-
-#print array.my_each {|num| puts "Current number is: #{num}"}
-#print hash.my_each {|key, val| puts "Current key and val are: #{key}, #{val}"} , "\n"
-#print hash.my_count {|k,v| v == "A"}
-#print array.my_count {|num| num < 5}
-#print array.my_map {|num| num*2}
-
-p = Proc.new {|num| num*2}
-print array.my_map p
-
-print [2,4,5].my_inject(5) {|prod, num| prod * num }
-print multiply_els([2,4,5])
