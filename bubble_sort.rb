@@ -8,7 +8,7 @@ def bubble_sort(array)
     break unless switched
     n -= 1
   end
-  return array, array.length-n
+  return array
 end
 
 def bubble_sort_by(array)
@@ -24,12 +24,5 @@ def bubble_sort_by(array)
     break unless switched
     n -= 1
   end
-  return array, array.length-n
+  return array
 end
-  
-
-print bubble_sort([3,2,1,0,0,0,0,0,0]) , "\n"
-print bubble_sort([4,3,78,2,0,2]), "\n"
-
-print bubble_sort_by(["hiiiiiiiii", "hello", "hey"]) {|left, right| left.length - right.length}
-
